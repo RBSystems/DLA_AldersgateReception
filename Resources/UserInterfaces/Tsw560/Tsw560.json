@@ -3,24 +3,29 @@
     {
       "IsSubPage": false,
       "IsSubPageReference": false,
-      "Name": "Connecting",
-      "Id": 1,
-      "VisibilityJoin": 18495,
+      "Name": "Welcome",
+      "Id": 6,
+      "VisibilityJoin": 30,
       "ChildObjects": [
         {
-          "Name": "ImageObject5",
-          "ControlType": "ImageObject",
-          "ControlTypeGroup": "ImageObject",
+          "Name": "Start",
+          "ControlType": "Button",
+          "ControlTypeGroup": "SimpleButton",
           "IdInRelationToParentPage": 1,
           "SubPageReferenceSubPageId": 0,
           "SmartJoin": 0,
-          "DigitalJoins": [],
+          "DigitalJoins": [
+            {
+              "JoinType": "digitalpressjoin",
+              "Join": 16
+            }
+          ],
           "AnalogJoins": [],
           "SerialJoins": [],
           "SmartProperties": null
         },
         {
-          "Name": "ImageObject4",
+          "Name": "ImageObject14",
           "ControlType": "ImageObject",
           "ControlTypeGroup": "ImageObject",
           "IdInRelationToParentPage": 2,
@@ -32,51 +37,10 @@
           "SmartProperties": null
         },
         {
-          "Name": "FormattedText3",
-          "ControlType": "FormattedText",
-          "ControlTypeGroup": "FormattedText",
+          "Name": "DigitalDateTime3",
+          "ControlType": "DigitalDateTime",
+          "ControlTypeGroup": "DigitalDateTime",
           "IdInRelationToParentPage": 3,
-          "SubPageReferenceSubPageId": 0,
-          "SmartJoin": 0,
-          "DigitalJoins": [],
-          "AnalogJoins": [],
-          "SerialJoins": [],
-          "SmartProperties": null
-        },
-        {
-          "Name": "AnimationObject2",
-          "ControlType": "AnimationObject",
-          "ControlTypeGroup": "AnimationObject",
-          "IdInRelationToParentPage": 4,
-          "SubPageReferenceSubPageId": 0,
-          "SmartJoin": 0,
-          "DigitalJoins": [],
-          "AnalogJoins": [],
-          "SerialJoins": [],
-          "SmartProperties": null
-        },
-        {
-          "Name": "SimpleLabel4",
-          "ControlType": "SimpleLabel",
-          "ControlTypeGroup": "SimpleLabel",
-          "IdInRelationToParentPage": 5,
-          "SubPageReferenceSubPageId": 0,
-          "SmartJoin": 0,
-          "DigitalJoins": [],
-          "AnalogJoins": [],
-          "SerialJoins": [
-            {
-              "JoinType": "indirecttextjoin",
-              "Join": 17300
-            }
-          ],
-          "SmartProperties": null
-        },
-        {
-          "Name": "SimpleLabel16",
-          "ControlType": "SimpleLabel",
-          "ControlTypeGroup": "SimpleLabel",
-          "IdInRelationToParentPage": 6,
           "SubPageReferenceSubPageId": 0,
           "SmartJoin": 0,
           "DigitalJoins": [],
@@ -85,13 +49,20 @@
           "SmartProperties": null
         }
       ],
-      "ChildSubPages": []
+      "ChildSubPages": [
+        {
+          "Name": "Connecting",
+          "SubPageId": 7,
+          "VisibilityJoin": 18495,
+          "ControlInstanceId": 4
+        }
+      ]
     },
     {
       "IsSubPage": true,
       "IsSubPageReference": false,
       "Name": "Header",
-      "Id": 2,
+      "Id": 1,
       "VisibilityJoin": 0,
       "ChildObjects": [
         {
@@ -147,7 +118,7 @@
       "IsSubPage": true,
       "IsSubPageReference": false,
       "Name": "Footer",
-      "Id": 3,
+      "Id": 2,
       "VisibilityJoin": 0,
       "ChildObjects": [
         {
@@ -213,7 +184,7 @@
       "IsSubPage": true,
       "IsSubPageReference": false,
       "Name": "PowerOffConfirm",
-      "Id": 4,
+      "Id": 3,
       "VisibilityJoin": 0,
       "ChildObjects": [
         {
@@ -274,30 +245,9 @@
       "IsSubPage": false,
       "IsSubPageReference": false,
       "Name": "Home",
-      "Id": 5,
+      "Id": 4,
       "VisibilityJoin": 31,
       "ChildObjects": [
-        {
-          "Name": "Menu",
-          "ControlType": "DynamicButtonListHorizontal",
-          "ControlTypeGroup": "DynamicButtonList",
-          "IdInRelationToParentPage": 1,
-          "SubPageReferenceSubPageId": 0,
-          "SmartJoin": 2,
-          "DigitalJoins": [],
-          "AnalogJoins": [],
-          "SerialJoins": [],
-          "SmartProperties": {
-            "UseEnabledItems": true,
-            "UseVisibleItems": true,
-            "UseSetNumberOfItems": false,
-            "UseIndirectText": true,
-            "NumberOfAvailableItems": 4,
-            "DigitalIncrement": 0,
-            "AnalogIncrement": 0,
-            "SerialIncrement": 0
-          }
-        },
         {
           "Name": "ImageObject12",
           "ControlType": "ImageObject",
@@ -309,32 +259,89 @@
           "AnalogJoins": [],
           "SerialJoins": [],
           "SmartProperties": null
+        },
+        {
+          "Name": "Laptop",
+          "ControlType": "AdvancedButton",
+          "ControlTypeGroup": "SimpleButton",
+          "IdInRelationToParentPage": 11,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [
+            {
+              "JoinType": "digitalpressjoin",
+              "Join": 100
+            }
+          ],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "Wireless",
+          "ControlType": "AdvancedButton",
+          "ControlTypeGroup": "SimpleButton",
+          "IdInRelationToParentPage": 12,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [
+            {
+              "JoinType": "digitalpressjoin",
+              "Join": 101
+            }
+          ],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "PC",
+          "ControlType": "AdvancedButton",
+          "ControlTypeGroup": "SimpleButton",
+          "IdInRelationToParentPage": 13,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [
+            {
+              "JoinType": "digitalpressjoin",
+              "Join": 102
+            }
+          ],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
         }
       ],
       "ChildSubPages": [
         {
           "Name": "Footer",
-          "SubPageId": 3,
+          "SubPageId": 2,
           "VisibilityJoin": 0,
           "ControlInstanceId": 3
         },
         {
           "Name": "Header",
-          "SubPageId": 2,
+          "SubPageId": 1,
           "VisibilityJoin": 0,
           "ControlInstanceId": 4
         },
         {
           "Name": "PowerOffConfirm",
-          "SubPageId": 4,
+          "SubPageId": 3,
           "VisibilityJoin": 201,
           "ControlInstanceId": 5
         },
         {
           "Name": "FireAlarm",
-          "SubPageId": 6,
+          "SubPageId": 5,
           "VisibilityJoin": 999,
           "ControlInstanceId": 6
+        },
+        {
+          "Name": "Connecting",
+          "SubPageId": 7,
+          "VisibilityJoin": 18495,
+          "ControlInstanceId": 7
         }
       ]
     },
@@ -342,7 +349,7 @@
       "IsSubPage": true,
       "IsSubPageReference": false,
       "Name": "FireAlarm",
-      "Id": 6,
+      "Id": 5,
       "VisibilityJoin": 0,
       "ChildObjects": [
         {
@@ -373,31 +380,26 @@
       "ChildSubPages": []
     },
     {
-      "IsSubPage": false,
+      "IsSubPage": true,
       "IsSubPageReference": false,
-      "Name": "Welcome",
+      "Name": "Connecting",
       "Id": 7,
-      "VisibilityJoin": 30,
+      "VisibilityJoin": 0,
       "ChildObjects": [
         {
-          "Name": "Start",
-          "ControlType": "Button",
-          "ControlTypeGroup": "SimpleButton",
+          "Name": "ImageObject",
+          "ControlType": "ImageObject",
+          "ControlTypeGroup": "ImageObject",
           "IdInRelationToParentPage": 1,
           "SubPageReferenceSubPageId": 0,
           "SmartJoin": 0,
-          "DigitalJoins": [
-            {
-              "JoinType": "digitalpressjoin",
-              "Join": 16
-            }
-          ],
+          "DigitalJoins": [],
           "AnalogJoins": [],
           "SerialJoins": [],
           "SmartProperties": null
         },
         {
-          "Name": "ImageObject14",
+          "Name": "ImageObject2",
           "ControlType": "ImageObject",
           "ControlTypeGroup": "ImageObject",
           "IdInRelationToParentPage": 2,
@@ -409,10 +411,51 @@
           "SmartProperties": null
         },
         {
-          "Name": "DigitalDateTime3",
-          "ControlType": "DigitalDateTime",
-          "ControlTypeGroup": "DigitalDateTime",
+          "Name": "FormattedText2",
+          "ControlType": "FormattedText",
+          "ControlTypeGroup": "FormattedText",
           "IdInRelationToParentPage": 3,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "AnimationObject",
+          "ControlType": "AnimationObject",
+          "ControlTypeGroup": "AnimationObject",
+          "IdInRelationToParentPage": 4,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "SimpleLabel",
+          "ControlType": "SimpleLabel",
+          "ControlTypeGroup": "SimpleLabel",
+          "IdInRelationToParentPage": 5,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [
+            {
+              "JoinType": "indirecttextjoin",
+              "Join": 17300
+            }
+          ],
+          "SmartProperties": null
+        },
+        {
+          "Name": "SimpleLabel2",
+          "ControlType": "SimpleLabel",
+          "ControlTypeGroup": "SimpleLabel",
+          "IdInRelationToParentPage": 6,
           "SubPageReferenceSubPageId": 0,
           "SmartJoin": 0,
           "DigitalJoins": [],

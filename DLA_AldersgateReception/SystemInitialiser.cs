@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Crestron.SimplSharpPro.DM;
+using DLA_AldersgateReception.UserInterface;
+using DLA_AldersgateReception.UserInterface.Listeners;
 using proAV.Core;
 using proAV.Core.Devices.Displays;
 using proAV.Core.Extensions;
@@ -16,7 +18,8 @@ namespace DLA_AldersgateReception {
 			var initActions = new List<Action> {
 				init.CreateTouchPanels,
 				init.CreateDisplay,
-				init.CreateSwitcher
+				init.CreateSwitcher,
+				init.CreateRoomState
 			};
 
 			var newActionQueue = new ActionQueue("SystemInitialiser", initActions);
@@ -38,9 +41,12 @@ namespace DLA_AldersgateReception {
 			if (ControlSystem.Configs.Tsw560 != null) {
 				var uiSigHandlers = TouchpanelFactory.Create(ControlSystem.Configs.Config.Touchpanels);
 				foreach (var uiSigHandler in uiSigHandlers) {
-					var userInterface = new AutoUserInterface(ControlSystem.Configs.Tsw560, uiSigHandler);
+					var userInterface = new AldersgateReceptionUserInterface(ControlSystem.Configs.Tsw560, uiSigHandler);
 					ProAvControlSystem.Userinterfaces.Add(userInterface);
 				}
+			}
+			foreach (var userInterface in ProAvControlSystem.Userinterfaces.OfType<AldersgateReceptionUserInterface>()) {
+				UserInterfaceListeners.Create(userInterface);
 			}
 		}
 
@@ -55,6 +61,12 @@ namespace DLA_AldersgateReception {
 			var config = ControlSystem.Configs.Config.Switcher;
 			var switcher = new HdMd4x14kE((uint)config.Connection.Port, config.Connection.Address, ProAvControlSystem.ControlSystem);
 			ProAvControlSystem.CrestronNativeDevices.Add(config.Id, switcher);
+		}
+
+		private void CreateRoomState() {
+			this.PrintFunctionName("CreateRoomState");
+			var newRoomState = new RoomState();
+			ControlSystem.Room = newRoomState;
 		}
 	}
 }

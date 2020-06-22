@@ -100,16 +100,18 @@
     <Compile Include="ControlSystem.cs" />
     <Compile Include="ProjectConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomState.cs" />
     <Compile Include="SystemInitialiser.cs" />
     <Compile Include="UserInterface\AldersgateReceptionUserInterface.cs" />
     <Compile Include="UserInterface\Listeners\FooterListener.cs" />
+    <Compile Include="UserInterface\Listeners\HeaderListener.cs" />
     <Compile Include="UserInterface\Listeners\HardKeysListener.cs" />
-    <Compile Include="UserInterface\Listeners\MenuListener.cs" />
+    <Compile Include="UserInterface\Listeners\HomeListener.cs" />
     <Compile Include="UserInterface\Listeners\PowerConfirmListener.cs" />
     <Compile Include="UserInterface\Listeners\UserInterfaceListeners.cs" />
     <Compile Include="UserInterface\Listeners\WelcomeListener.cs" />
     <None Include="Properties\ControlSystem.cfg" />
-    <None Include="Resources\Config\config.json" />
+    <EmbeddedResource Include="Resources\Config\config.json" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
   <PropertyGroup>
