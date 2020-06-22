@@ -1,0 +1,427 @@
+{
+  "Pages": [
+    {
+      "IsSubPage": false,
+      "IsSubPageReference": false,
+      "Name": "Connecting",
+      "Id": 1,
+      "VisibilityJoin": 18495,
+      "ChildObjects": [
+        {
+          "Name": "ImageObject5",
+          "ControlType": "ImageObject",
+          "ControlTypeGroup": "ImageObject",
+          "IdInRelationToParentPage": 1,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "ImageObject4",
+          "ControlType": "ImageObject",
+          "ControlTypeGroup": "ImageObject",
+          "IdInRelationToParentPage": 2,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "FormattedText3",
+          "ControlType": "FormattedText",
+          "ControlTypeGroup": "FormattedText",
+          "IdInRelationToParentPage": 3,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "AnimationObject2",
+          "ControlType": "AnimationObject",
+          "ControlTypeGroup": "AnimationObject",
+          "IdInRelationToParentPage": 4,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "SimpleLabel4",
+          "ControlType": "SimpleLabel",
+          "ControlTypeGroup": "SimpleLabel",
+          "IdInRelationToParentPage": 5,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [
+            {
+              "JoinType": "indirecttextjoin",
+              "Join": 17300
+            }
+          ],
+          "SmartProperties": null
+        },
+        {
+          "Name": "SimpleLabel16",
+          "ControlType": "SimpleLabel",
+          "ControlTypeGroup": "SimpleLabel",
+          "IdInRelationToParentPage": 6,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        }
+      ],
+      "ChildSubPages": []
+    },
+    {
+      "IsSubPage": true,
+      "IsSubPageReference": false,
+      "Name": "Header",
+      "Id": 2,
+      "VisibilityJoin": 0,
+      "ChildObjects": [
+        {
+          "Name": "RoomName",
+          "ControlType": "SimpleLabel",
+          "ControlTypeGroup": "SimpleLabel",
+          "IdInRelationToParentPage": 1,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [
+            {
+              "JoinType": "indirecttextjoin",
+              "Join": 10
+            }
+          ],
+          "SmartProperties": null
+        },
+        {
+          "Name": "PageTitle",
+          "ControlType": "SimpleLabel",
+          "ControlTypeGroup": "SimpleLabel",
+          "IdInRelationToParentPage": 2,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [
+            {
+              "JoinType": "indirecttextjoin",
+              "Join": 11
+            }
+          ],
+          "SmartProperties": null
+        },
+        {
+          "Name": "DigitalDateTime",
+          "ControlType": "DigitalDateTime",
+          "ControlTypeGroup": "DigitalDateTime",
+          "IdInRelationToParentPage": 3,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        }
+      ],
+      "ChildSubPages": []
+    },
+    {
+      "IsSubPage": true,
+      "IsSubPageReference": false,
+      "Name": "Footer",
+      "Id": 3,
+      "VisibilityJoin": 0,
+      "ChildObjects": [
+        {
+          "Name": "VolumeFader",
+          "ControlType": "FaderSliderHorizontal",
+          "ControlTypeGroup": "FaderSlider",
+          "IdInRelationToParentPage": 1,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [
+            {
+              "JoinType": "digitalpressjoin",
+              "Join": 51
+            }
+          ],
+          "AnalogJoins": [
+            {
+              "JoinType": "analogfeedbackjoin",
+              "Join": 51
+            }
+          ],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "VolumeLower",
+          "ControlType": "AdvancedButton",
+          "ControlTypeGroup": "SimpleButton",
+          "IdInRelationToParentPage": 2,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [
+            {
+              "JoinType": "digitalpressjoin",
+              "Join": 57
+            }
+          ],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "VolumeRaise",
+          "ControlType": "AdvancedButton",
+          "ControlTypeGroup": "SimpleButton",
+          "IdInRelationToParentPage": 3,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [
+            {
+              "JoinType": "digitalpressjoin",
+              "Join": 56
+            }
+          ],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        }
+      ],
+      "ChildSubPages": []
+    },
+    {
+      "IsSubPage": true,
+      "IsSubPageReference": false,
+      "Name": "PowerOffConfirm",
+      "Id": 4,
+      "VisibilityJoin": 0,
+      "ChildObjects": [
+        {
+          "Name": "FormattedText",
+          "ControlType": "FormattedText",
+          "ControlTypeGroup": "FormattedText",
+          "IdInRelationToParentPage": 1,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [
+            {
+              "JoinType": "cips",
+              "Join": 20
+            }
+          ],
+          "SmartProperties": null
+        },
+        {
+          "Name": "Confirm",
+          "ControlType": "AdvancedButton",
+          "ControlTypeGroup": "SimpleButton",
+          "IdInRelationToParentPage": 2,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [
+            {
+              "JoinType": "digitalpressjoin",
+              "Join": 212
+            }
+          ],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "Cancel",
+          "ControlType": "AdvancedButton",
+          "ControlTypeGroup": "SimpleButton",
+          "IdInRelationToParentPage": 3,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [
+            {
+              "JoinType": "digitalpressjoin",
+              "Join": 211
+            }
+          ],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        }
+      ],
+      "ChildSubPages": []
+    },
+    {
+      "IsSubPage": false,
+      "IsSubPageReference": false,
+      "Name": "Home",
+      "Id": 5,
+      "VisibilityJoin": 31,
+      "ChildObjects": [
+        {
+          "Name": "Menu",
+          "ControlType": "DynamicButtonListHorizontal",
+          "ControlTypeGroup": "DynamicButtonList",
+          "IdInRelationToParentPage": 1,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 2,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": {
+            "UseEnabledItems": true,
+            "UseVisibleItems": true,
+            "UseSetNumberOfItems": false,
+            "UseIndirectText": true,
+            "NumberOfAvailableItems": 4,
+            "DigitalIncrement": 0,
+            "AnalogIncrement": 0,
+            "SerialIncrement": 0
+          }
+        },
+        {
+          "Name": "ImageObject12",
+          "ControlType": "ImageObject",
+          "ControlTypeGroup": "ImageObject",
+          "IdInRelationToParentPage": 2,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        }
+      ],
+      "ChildSubPages": [
+        {
+          "Name": "Footer",
+          "SubPageId": 3,
+          "VisibilityJoin": 0,
+          "ControlInstanceId": 3
+        },
+        {
+          "Name": "Header",
+          "SubPageId": 2,
+          "VisibilityJoin": 0,
+          "ControlInstanceId": 4
+        },
+        {
+          "Name": "PowerOffConfirm",
+          "SubPageId": 4,
+          "VisibilityJoin": 201,
+          "ControlInstanceId": 5
+        },
+        {
+          "Name": "FireAlarm",
+          "SubPageId": 6,
+          "VisibilityJoin": 999,
+          "ControlInstanceId": 6
+        }
+      ]
+    },
+    {
+      "IsSubPage": true,
+      "IsSubPageReference": false,
+      "Name": "FireAlarm",
+      "Id": 6,
+      "VisibilityJoin": 0,
+      "ChildObjects": [
+        {
+          "Name": "FillBorderObject",
+          "ControlType": "FillBorder",
+          "ControlTypeGroup": "BorderFillObject",
+          "IdInRelationToParentPage": 2,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "SimpleLabel7",
+          "ControlType": "SimpleLabel",
+          "ControlTypeGroup": "SimpleLabel",
+          "IdInRelationToParentPage": 1,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        }
+      ],
+      "ChildSubPages": []
+    },
+    {
+      "IsSubPage": false,
+      "IsSubPageReference": false,
+      "Name": "Welcome",
+      "Id": 7,
+      "VisibilityJoin": 30,
+      "ChildObjects": [
+        {
+          "Name": "Start",
+          "ControlType": "Button",
+          "ControlTypeGroup": "SimpleButton",
+          "IdInRelationToParentPage": 1,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [
+            {
+              "JoinType": "digitalpressjoin",
+              "Join": 16
+            }
+          ],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "ImageObject14",
+          "ControlType": "ImageObject",
+          "ControlTypeGroup": "ImageObject",
+          "IdInRelationToParentPage": 2,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        },
+        {
+          "Name": "DigitalDateTime3",
+          "ControlType": "DigitalDateTime",
+          "ControlTypeGroup": "DigitalDateTime",
+          "IdInRelationToParentPage": 3,
+          "SubPageReferenceSubPageId": 0,
+          "SmartJoin": 0,
+          "DigitalJoins": [],
+          "AnalogJoins": [],
+          "SerialJoins": [],
+          "SmartProperties": null
+        }
+      ],
+      "ChildSubPages": []
+    }
+  ]
+}

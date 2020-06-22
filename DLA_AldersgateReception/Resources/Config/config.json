@@ -1,0 +1,39 @@
+﻿{
+  "crestronkit": {
+    "native": []
+  },
+  "displays": [
+    {
+      "description": "Reception",
+      "type": "samsungdisplay",
+      "id": 2,
+      "groupid": 1,
+      "connection": {
+        "type": "serial",
+        "address": "0",
+        "port": 1
+      },
+      "customlabel": "Wall Display"
+    }
+  ],
+  "touchpanels": [
+    {
+      "type": "tsw560",
+      "id": 1,
+      "address": "03",
+      "groupid": 1,
+      "userinterface": {
+        "type": "AldersgateReceptionUserInterface"
+      },
+      "description": "Reception"
+    }
+  ],
+  "switcher": {
+    "id": 3,
+    "groupid": 1,
+    "connection": {
+      "address": "0.0.0.0",
+      "port": 0
+    }
+  }
+}
